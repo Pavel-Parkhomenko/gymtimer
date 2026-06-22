@@ -1,7 +1,7 @@
 const curTime = document.querySelector('.time-current')
 const mainTime = document.querySelector('.time-main')
 const body = document.querySelector('body')
-const timerSvgPath = document.querySelector('#timer-svg path')
+// const timerSvgPath = document.querySelector('#timer-svg path')
 
 let secondsMain = 0
 let secondsCur = 0
@@ -76,7 +76,8 @@ function updateColorSvg(seconds) {
 
   const hue = 120 - progress * 120
 
-  timerSvgPath.setAttribute('stroke', `hsl(${hue}, 100%, 50%)`)
+  // timerSvgPath.setAttribute('stroke', `hsl(${hue}, 100%, 50%)`)
+  curTime.style.color = `hsl(${hue}, 100%, 50%)`
 }
 
 startTimeCur()
