@@ -1,0 +1,24 @@
+{
+  "name": "gymtimer",
+  "version": "1.0.0",
+  "description": "timer fot gym",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pavel-Parkhomenko/gymtimer.git"
+  },
+  "keywords": [
+    "timer",
+    "js",
+    "html"
+  ],
+  "author": "Pavel-P",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pavel-Parkhomenko/gymtimer/issues"
+  },
+  "homepage": "https://github.com/Pavel-Parkhomenko/gymtimer#readme"
+}
