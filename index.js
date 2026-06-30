@@ -57,6 +57,12 @@ function resetTimerCur() {
   updateDisplay(OPT.cur)
 }
 
+function resetTimerMain() {
+  // stopTimerCur()
+  secondsMain = 0
+  updateDisplay(OPT.main)
+}
+
 body.addEventListener('click', () => {
   if (intervalIdCur !== null) resetTimerCur()
 })
@@ -65,9 +71,10 @@ body.addEventListener('keydown', function (event) {
   if (event.code === 'Space') {
     event.preventDefault()
 
-    if (intervalIdCur !== null) {
-      resetTimerCur()
-    }
+    if (intervalIdCur !== null) resetTimerCur()
+  } else if (event.altKey && event.code === 'KeyR') {
+    resetTimerMain()
+    resetTimerCur()
   }
 })
 
